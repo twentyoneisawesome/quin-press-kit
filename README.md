@@ -63,6 +63,9 @@ assets/
 │   ├─ 07_cashflow.png
 │   ├─ 08_cashflow_dark.png
 │   └─ preview/                        560 px JPEGs used by the press page
+├─ promo/
+│   ├─ quin-promo-primary-1920x1080.jpg  Google Play promotional content, 16:9
+│   └─ quin-promo-square-1080x1080.jpg   Google Play promotional content, 1:1
 ├─ screenshots/ipad/                   (to come)
 ├─ logo/                               (to come)
 └─ video/                              (to come)
