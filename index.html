@@ -1,151 +1,403 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW" data-lang="zh">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quin — Press Kit</title>
-  <meta name="description" content="Press kit for Quin, an offline-first personal finance app that turns Taiwan's national e-invoice system into a ledger that keeps itself.">
-  <link rel="icon" href="assets/icon.png">
-  <link rel="stylesheet" href="assets/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quin 快記帳 — 帳本自己會寫</title>
+<meta name="description" content="綁定電子發票載具，消費自動變成分類好的交易；說一句話也能記一筆。預算、目標、投資、多幣別都在裡面。免帳號、免雲端，離線就能用。iPhone 與 Android 免費下載。">
+<meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000814" media="(prefers-color-scheme: dark)">
+<meta name="apple-itunes-app" content="app-id=6758532357">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quin 快記帳 — 帳本自己會寫">
+<meta property="og:description" content="電子發票自動入帳、語音記一筆。免帳號、免雲端，離線就能用。">
+<meta property="og:url" content="https://twentyoneisawesome.github.io/quin-press-kit/">
+<meta property="og:image" content="https://twentyoneisawesome.github.io/quin-press-kit/assets/promo/quin-promo-primary-1920x1080.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>
+  // Set theme and language before first paint so nothing flashes.
+  (function () {
+    var r = document.documentElement, s = {};
+    try { s = { t: localStorage.getItem('quin-theme'), l: localStorage.getItem('quin-lang') }; } catch (e) {}
+    var dark = s.t ? s.t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    r.setAttribute('data-theme', dark ? 'dark' : 'light');
+    var q = new URLSearchParams(location.search);
+    if (q.get('theme')) r.setAttribute('data-theme', q.get('theme') === 'dark' ? 'dark' : 'light');
+    var lang = q.get('lang') || s.l || ((navigator.language || 'zh').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en');
+    lang = lang === 'en' ? 'en' : 'zh';
+    r.setAttribute('data-lang', lang);
+    r.setAttribute('lang', lang === 'zh' ? 'zh-Hant-TW' : 'en');
+  })();
+</script>
 </head>
+
 <body>
+
+<header class="top">
   <div class="wrap">
-
-    <header class="hero">
-      <img class="logo" src="assets/icon.png" alt="Quin app icon">
-      <h1>Quin Press Kit</h1>
-      <p class="tagline">Media assets and facts for editors and press.</p>
-    </header>
-
-    <section>
-      <h2>Quick facts</h2>
-      <div class="card">
-        <table class="facts">
-          <tbody>
-            <tr><th>App name</th><td>Quin記帳 (Quin)</td></tr>
-            <tr><th>Developer</th><td>HSIN WEI LEE — independent developer</td></tr>
-            <tr><th>Category</th><td>Finance</td></tr>
-            <tr><th>Released</th><td>4 August 2026</td></tr>
-            <tr><th>Current version</th><td>1.0.6 — 28 August 2026</td></tr>
-            <tr><th>Platforms</th><td>iPhone, iPad (iOS) · Android</td></tr>
-            <tr><th>Languages</th><td>English, Traditional Chinese</td></tr>
-            <tr><th>Price</th><td>Free. In Taiwan a subscription unlocks automatic e-invoice import, with a one-month free trial. Everywhere else every feature is free and the subscription is purely a way to support development.</td></tr>
-            <tr><th>App Store</th><td><a href="https://apps.apple.com/tw/app/id6758532357">apps.apple.com/tw/app/id6758532357</a></td></tr>
-            <tr><th>Support &amp; privacy</th><td><a href="https://twentyoneisawesome.github.io/quin-support/">quin-support</a></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section>
-      <h2>What Quin is</h2>
-      <p>Quin turns Taiwan's national e-invoice (電子發票) system into an expense tracker that keeps itself. Connect your carrier once and every purchase arrives already categorized and matched against your budgets — no receipts, no manual entry.</p>
-      <p>Around that sits a full finance app: a one-glance dashboard, envelope budgets with overspend alerts, savings goals funded from real account balances, holdings priced from TWSE and US markets, recurring-bill reminders, and multi-currency accounts with daily exchange rates.</p>
-      <p>There is no sign-up and no cloud account. The ledger is a local, biometrically locked database on the device, fully usable offline from the first launch.</p>
-      <p>
-        <span class="pill">No account</span>
-        <span class="pill">No cloud sync</span>
-        <span class="pill">No ads</span>
-        <span class="pill">No third-party trackers</span>
-        <span class="pill">Offline-first</span>
-      </p>
-    </section>
-
-    <section>
-      <h2>For reviewers</h2>
-      <div class="card">
-        <p>Tap <strong>Demo Mode</strong> on the very first screen. The complete app loads with realistic data in seconds — no sign-up and no personal information required.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Screenshots</h2>
-      <p>iPhone 6.9" · 1320×2868 PNG. Click any image for the full-resolution file. Screenshots use the app's built-in demo data, not a real person's finances.</p>
-      <div class="shots">
-        <figure>
-          <a href="assets/screenshots/iphone/01_dashboard.png">
-            <img src="assets/screenshots/iphone/preview/01_dashboard.jpg" alt="Budgets, upcoming bills and net income at a glance" loading="lazy">
-          </a>
-          <figcaption>Dashboard</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/screenshots/iphone/02_transactions.png">
-            <img src="assets/screenshots/iphone/preview/02_transactions.jpg" alt="Purchases imported from the e-invoice carrier, already categorized" loading="lazy">
-          </a>
-          <figcaption>Transactions</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/screenshots/iphone/03_categories.png">
-            <img src="assets/screenshots/iphone/preview/03_categories.jpg" alt="Envelope budgets per category" loading="lazy">
-          </a>
-          <figcaption>Budgets</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/screenshots/iphone/04_goals.png">
-            <img src="assets/screenshots/iphone/preview/04_goals.jpg" alt="Savings goals funded from real account balances" loading="lazy">
-          </a>
-          <figcaption>Goals</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/screenshots/iphone/05_investments.png">
-            <img src="assets/screenshots/iphone/preview/05_investments.jpg" alt="Holdings priced from TWSE and US markets" loading="lazy">
-          </a>
-          <figcaption>Investments</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/screenshots/iphone/06_accounts.png">
-            <img src="assets/screenshots/iphone/preview/06_accounts.jpg" alt="Assets and liabilities grouped by type" loading="lazy">
-          </a>
-          <figcaption>Accounts</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/screenshots/iphone/07_cashflow.png">
-            <img src="assets/screenshots/iphone/preview/07_cashflow.jpg" alt="Income and spending over time" loading="lazy">
-          </a>
-          <figcaption>Cash flow</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/screenshots/iphone/08_cashflow_dark.png">
-            <img src="assets/screenshots/iphone/preview/08_cashflow_dark.jpg" alt="The same screen following the system theme" loading="lazy">
-          </a>
-          <figcaption>Dark mode</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section>
-      <h2>Downloads</h2>
-      <ul class="dl">
-        <li><span class="what"><a href="assets/icon/quin-icon-1024.png">App icon</a></span> <span class="meta">PNG · 1024×1024 · no alpha</span></li>
-        <li><span class="what"><a href="assets/screenshots/iphone/">iPhone screenshots</a></span> <span class="meta">PNG · 1320×2868 (6.9")</span></li>
-        <li><span class="what"><a href="assets/screenshots/android/">Android screenshots</a></span> <span class="meta">PNG · 1080×2160</span></li>
-        <li><span class="what"><a href="assets/promo/quin-feature-graphic-1024x500.jpg">Feature graphic</a></span> <span class="meta">JPG · 1024×500 · no alpha</span></li>
-        <li><span class="what"><a href="https://github.com/twentyoneisawesome/quin-press-kit">All assets on GitHub</a></span> <span class="meta">browse or clone the repository</span></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Boilerplate</h2>
-      <p>Short — for a caption or a list entry:</p>
-      <div class="boiler">
-        <p>Link your Taiwanese e-invoice carrier once and Quin writes your ledger for you — budgets, goals and TWSE-priced holdings included, with no account and no cloud.</p>
-      </div>
-      <p style="margin-top:18px">Long — for a paragraph of copy:</p>
-      <div class="boiler">
-        <p>Quin is an offline-first personal finance app built around Taiwan's government e-invoice system. Connect a carrier once and purchases arrive already categorized and matched against your budgets, so the ledger keeps itself. Alongside it sit envelope budgets, savings goals tied to real account balances, holdings priced from TWSE and US markets, recurring-bill reminders and multi-currency accounts. Quin requires no account and syncs to no cloud — the ledger is a local, biometrically locked database on the device. Outside Taiwan every feature is free.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Press enquiries, review copies and questions are all welcome.</p>
-      <p><a class="contact-btn" href="mailto:twentyoneisawesome@gmail.com?subject=Quin%20Press%20Enquiry">Email the developer</a></p>
-    </section>
-
-    <footer>
-      <p>© 2026 Quin · <a href="https://twentyoneisawesome.github.io/quin-support/">Support</a> · Assets are provided for editorial coverage of Quin; please don't modify the icon or logo, or use them to imply endorsement.</p>
-    </footer>
-
+    <a class="brand" href="./">
+      <img src="assets/icon.png" alt="">
+      Quin<span class="sub" data-l="zh">快記帳</span><span class="sub" data-l="en">Budget &amp; Expenses</span>
+    </a>
+    <nav>
+      <a href="#einvoice"><span data-l="zh">功能</span><span data-l="en">Features</span></a>
+      <a href="#screens"><span data-l="zh">畫面</span><span data-l="en">Screens</span></a>
+      <a href="#privacy"><span data-l="zh">隱私</span><span data-l="en">Privacy</span></a>
+      <a href="#faq"><span data-l="zh">常見問題</span><span data-l="en">FAQ</span></a>
+    </nav>
+    <button class="toggle" data-toggle="lang" type="button">EN</button>
+    <button class="toggle" data-toggle="theme" type="button" aria-label="切換深淺色 / Toggle theme">
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M20 14.2A8.2 8.2 0 0 1 9.8 4 8.4 8.4 0 1 0 20 14.2z"/>
+      </svg>
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.2"/>
+        <path d="M12 2.6v2M12 19.4v2M4.2 12h-2M21.8 12h-2M6.3 6.3 4.9 4.9M19.1 19.1l-1.4-1.4M17.7 6.3l1.4-1.4M4.9 19.1l1.4-1.4"/>
+      </svg>
+    </button>
+    <a class="cta-sm" href="#download"><span data-l="zh">下載</span><span data-l="en">Download</span></a>
   </div>
+</header>
+
+<main>
+
+  <!-- ── hero ──────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow reveal"><span data-l="zh">電子發票 × 語音記帳</span><span data-l="en">E-invoice · voice entry · offline</span></p>
+        <h1 class="reveal">
+          <span data-l="zh">帳本<br>自己會寫</span>
+          <span data-l="en">The ledger that<br>keeps itself</span>
+        </h1>
+        <p class="lede reveal">
+          <span data-l="zh">綁定電子發票載具一次，消費就自動變成分類好的交易。懶得打字，說一句話也能記一筆。</span>
+          <span data-l="en">Say a sentence and it becomes a transaction. In Taiwan, link your e-invoice carrier once and purchases file themselves.</span>
+        </p>
+        <div class="stores reveal" id="download">
+          <a href="https://apps.apple.com/tw/app/id6758532357" aria-label="Download on the App Store">
+            <img class="on-light" data-l="zh" src="assets/badges/app-store-zh.svg" alt="下載 App Store 版">
+            <img class="on-dark" data-l="zh" src="assets/badges/app-store-zh-white.svg" alt="下載 App Store 版">
+            <img class="on-light" data-l="en" src="assets/badges/app-store-en.svg" alt="Download on the App Store">
+            <img class="on-dark" data-l="en" src="assets/badges/app-store-en-white.svg" alt="Download on the App Store">
+          </a>
+          <a class="play" href="https://play.google.com/store/apps/details?id=com.twentyoneisawesome.quin" aria-label="Get it on Google Play">
+            <img data-l="zh" src="assets/badges/google-play-zh.png" alt="上 Google Play 下載">
+            <img data-l="en" src="assets/badges/google-play-en.png" alt="Get it on Google Play">
+          </a>
+        </div>
+        <p class="fineprint reveal">
+          <span data-l="zh">免費下載 · 不用註冊 · iPhone 與 Android</span>
+          <span data-l="en">Free · no sign-up · iPhone and Android</span>
+        </p>
+      </div>
+
+      <div class="stage reveal">
+        <div class="rig">
+        <div class="slip" aria-hidden="true">
+          <div class="head"><span data-l="zh">全家便利商店</span><span data-l="en">FamilyMart</span><span>10:24</span></div>
+          <div class="row"><span data-l="zh">拿鐵</span><span data-l="en">Latte</span><span>65</span></div>
+          <div class="row"><span data-l="zh">火腿三明治</span><span data-l="en">Ham sandwich</span><span>55</span></div>
+          <div class="row total"><span data-l="zh">合計</span><span data-l="en">Total</span><span>120</span></div>
+        </div>
+
+        <svg class="flow" viewBox="0 0 150 170" aria-hidden="true">
+          <path id="flowpath" d="M12 4 C 46 54, 22 116, 142 160"/>
+          <circle r="3.4">
+            <animateMotion dur="3.4s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+              <mpath href="#flowpath"/>
+            </animateMotion>
+            <animate attributeName="opacity" values="0;1;1;0" dur="3.4s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+
+        <div class="phone">
+          <img class="shot-light" src="assets/screenshots/iphone/web/01_dashboard.jpg" width="620" height="1347" alt="Quin 總覽畫面：本月預算剩餘、各類別預算、本月結餘與目標進度">
+          <img class="shot-dark" src="assets/screenshots/iphone/web/08_cashflow_dark.jpg" width="620" height="1347" alt="Quin 深色模式的現金流畫面">
+        </div>
+
+        <div class="landed" aria-hidden="true">
+          <span class="dot">☕</span>
+          <span>
+            <span class="t1"><span data-l="zh">早餐</span><span data-l="en">Breakfast</span><span class="amt">$120</span></span><br>
+            <span class="t2"><span data-l="zh">已自動分類</span><span data-l="en">Filed automatically</span></span>
+          </span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── facts ─────────────────────────────────────────────────────── -->
+  <div class="facts">
+    <div class="wrap">
+      <span data-l="zh">不用註冊</span><span data-l="en">No sign-up</span>
+      <span data-l="zh">沒有雲端同步</span><span data-l="en">No cloud sync</span>
+      <span data-l="zh">離線可用</span><span data-l="en">Works offline</span>
+      <span data-l="zh">無廣告、無第三方追蹤</span><span data-l="en">No ads, no trackers</span>
+      <span data-l="zh">10 種介面語言</span><span data-l="en">10 interface languages</span>
+    </div>
+  </div>
+
+  <!-- ── e-invoice ─────────────────────────────────────────────────── -->
+  <section class="split" id="einvoice">
+    <div class="wrap">
+      <div>
+        <span class="tag reveal"><span data-l="zh">台灣限定</span><span data-l="en">Taiwan only</span></span>
+        <h2 class="reveal"><span data-l="zh">消費完，帳就記好了</span><span data-l="en">It files itself</span></h2>
+        <p class="lede reveal">
+          <span data-l="zh">綁定手機條碼載具一次，之後每一筆消費自己進帳本 —— 店名、金額、品項明細都在，類別也分好了。</span>
+          <span data-l="en">Link your government e-invoice carrier once. Every purchase then arrives on its own — merchant, amount, line items, already categorized.</span>
+        </p>
+        <ul class="bullets reveal">
+          <li><span data-l="zh">品項明細照實記下，不是只有一個總額</span><span data-l="en">Line-item detail, not just a total</span></li>
+          <li><span data-l="zh">自動對到你的預算與類別</span><span data-l="en">Matched against your budgets and categories</span></li>
+          <li><span data-l="zh">主畫面小工具直接叫出手機條碼</span><span data-l="en">A home screen widget shows your carrier barcode at checkout</span></li>
+        </ul>
+      </div>
+      <div class="art reveal">
+        <div class="phone" style="margin:0 auto">
+          <img src="assets/screenshots/iphone/web/02_transactions.jpg" width="620" height="1347" alt="交易紀錄畫面：由電子發票匯入、已分類好的消費">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="perf" aria-hidden="true"></div>
+
+  <!-- ── voice ─────────────────────────────────────────────────────── -->
+  <section class="split flip" id="voice">
+    <div class="wrap">
+      <div>
+        <span class="tag new reveal"><span data-l="zh">新功能</span><span data-l="en">New</span></span>
+        <h2 class="reveal"><span data-l="zh">說一句，就記一筆</span><span data-l="en">Say it, and it's logged</span></h2>
+        <p class="lede reveal">
+          <span data-l="zh">「午餐便當一百二十現金」說完，金額、類別、帳戶就填好了，確認一下就存檔。</span>
+          <span data-l="en">Speak one sentence and the amount, category and account are filled in. Glance, confirm, done.</span>
+        </p>
+        <ul class="bullets reveal">
+          <li><span data-l="zh">語音轉文字在裝置上完成</span><span data-l="en">Speech-to-text runs on the device</span></li>
+          <li><span data-l="zh">離線時，能判斷的欄位照樣先填好</span><span data-l="en">Offline, it still fills in what it can work out locally</span></li>
+          <li><span data-l="zh">主畫面小工具一點就開始說</span><span data-l="en">One tap from the home screen widget</span></li>
+        </ul>
+      </div>
+      <div class="art reveal">
+        <div class="demo">
+          <div class="mic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <rect x="9" y="3" width="6" height="11" rx="3"/>
+              <path d="M5.5 11.5a6.5 6.5 0 0 0 13 0"/>
+              <path d="M12 18v3"/>
+            </svg>
+          </div>
+          <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="said"></p>
+          <div class="fields">
+            <div class="f"><span class="k"><span data-l="zh">名稱</span><span data-l="en">NAME</span></span><span class="v"></span></div>
+            <div class="f"><span class="k"><span data-l="zh">金額</span><span data-l="en">AMOUNT</span></span><span class="v"></span></div>
+            <div class="f"><span class="k"><span data-l="zh">類別</span><span data-l="en">CATEGORY</span></span><span class="v"></span></div>
+            <div class="f"><span class="k"><span data-l="zh">帳戶</span><span data-l="en">ACCOUNT</span></span><span class="v"></span></div>
+          </div>
+          <button class="replay" type="button"><span data-l="zh">再播一次</span><span data-l="en">Play again</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── feature grid ──────────────────────────────────────────────── -->
+  <section id="features">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span data-l="zh">其他功能</span><span data-l="en">Everything else</span></p>
+      <h2 class="reveal"><span data-l="zh">一個 App，把錢的事看完</span><span data-l="en">One app for the whole picture</span></h2>
+
+      <div class="grid">
+        <div class="f-card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 20h18"/><path d="M6 20v-6M11 20V8M16 20v-9M21 20V5"/></svg></div>
+          <h3><span data-l="zh">一眼看懂這個月</span><span data-l="en">This month at a glance</span></h3>
+          <p><span data-l="zh">首頁只回答一個問題：這個月還好嗎。預算剩多少、哪幾筆待確認、哪張帳單快到期。</span><span data-l="en">The dashboard answers one question — am I okay this month. Budget left, entries to review, bills coming due.</span></p>
+        </div>
+
+        <div class="f-card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v8.5h8.5"/></svg></div>
+          <h3><span data-l="zh">信封式預算</span><span data-l="en">Envelope budgets</span></h3>
+          <p><span data-l="zh">每個類別一個月度預算，快超支就提醒你，不必等到月底才發現。</span><span data-l="en">A monthly budget per category, with a nudge as you approach the line — not at month end.</span></p>
+        </div>
+
+        <div class="f-card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></div>
+          <h3><span data-l="zh">儲蓄目標</span><span data-l="en">Savings goals</span></h3>
+          <p><span data-l="zh">進度是由真實帳戶餘額算出來的，不是自己填上去的數字。</span><span data-l="en">Progress backed by real account balances, not a number you typed in.</span></p>
+        </div>
+
+        <div class="f-card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5l5.5-5.5 3.5 3.5L21 5.5"/><path d="M15 5.5h6v6"/></svg></div>
+          <h3><span data-l="zh">投資持股</span><span data-l="en">Investments</span></h3>
+          <p><span data-l="zh">台股與美股報價，成本、市值、報酬放在同一頁；多個券商帳戶分開算。</span><span data-l="en">Holdings priced from the Taiwan and US markets — cost, market value and return together.</span></p>
+        </div>
+
+        <div class="f-card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c4.5 4.7 4.5 12.3 0 17-4.5-4.7-4.5-12.3 0-17z"/></svg></div>
+          <h3><span data-l="zh">多幣別帳戶</span><span data-l="en">Multi-currency</span></h3>
+          <p><span data-l="zh">不同幣別各記各的，總額依每日匯率換算。出國、海外收入都算得清楚。</span><span data-l="en">Keep accounts in different currencies; totals convert at daily rates.</span></p>
+        </div>
+
+        <div class="f-card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7.5" height="7.5" rx="2.2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2.2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2.2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2.2"/></svg></div>
+          <h3><span data-l="zh">主畫面小工具</span><span data-l="en">Home screen widgets</span></h3>
+          <p><span data-l="zh">本月可花、快速記一筆、即將到期的帳單、手機條碼 —— iOS 與 Android 都有。</span><span data-l="en">Budget left, quick add, upcoming bills and your carrier barcode — on iOS and Android.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── screens ───────────────────────────────────────────────────── -->
+  <section id="screens">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span data-l="zh">實際畫面</span><span data-l="en">Screens</span></p>
+      <h2 class="reveal"><span data-l="zh">深色淺色，跟著系統走</span><span data-l="en">Light and dark, following your system</span></h2>
+    </div>
+
+    <div class="rail">
+      <figure><div class="phone"><img loading="lazy" src="assets/screenshots/iphone/web/01_dashboard.jpg" width="620" height="1347" alt="總覽"></div><figcaption><span data-l="zh">總覽</span><span data-l="en">Dashboard</span></figcaption></figure>
+      <figure><div class="phone"><img loading="lazy" src="assets/screenshots/iphone/web/02_transactions.jpg" width="620" height="1347" alt="交易紀錄"></div><figcaption><span data-l="zh">交易紀錄</span><span data-l="en">Transactions</span></figcaption></figure>
+      <figure><div class="phone"><img loading="lazy" src="assets/screenshots/iphone/web/03_categories.jpg" width="620" height="1347" alt="預算"></div><figcaption><span data-l="zh">預算</span><span data-l="en">Budgets</span></figcaption></figure>
+      <figure><div class="phone"><img loading="lazy" src="assets/screenshots/iphone/web/04_goals.jpg" width="620" height="1347" alt="目標"></div><figcaption><span data-l="zh">目標</span><span data-l="en">Goals</span></figcaption></figure>
+      <figure><div class="phone"><img loading="lazy" src="assets/screenshots/iphone/web/05_investments.jpg" width="620" height="1347" alt="投資"></div><figcaption><span data-l="zh">投資</span><span data-l="en">Investments</span></figcaption></figure>
+      <figure><div class="phone"><img loading="lazy" src="assets/screenshots/iphone/web/06_accounts.jpg" width="620" height="1347" alt="帳戶"></div><figcaption><span data-l="zh">帳戶</span><span data-l="en">Accounts</span></figcaption></figure>
+      <figure><div class="phone"><img loading="lazy" src="assets/screenshots/iphone/web/07_cashflow.jpg" width="620" height="1347" alt="現金流"></div><figcaption><span data-l="zh">現金流</span><span data-l="en">Cash flow</span></figcaption></figure>
+      <figure><div class="phone"><img loading="lazy" src="assets/screenshots/iphone/web/08_cashflow_dark.jpg" width="620" height="1347" alt="深色模式"></div><figcaption><span data-l="zh">深色模式</span><span data-l="en">Dark mode</span></figcaption></figure>
+    </div>
+
+    <div class="wrap">
+      <p class="hint"><span data-l="zh">← 左右滑動看更多 →</span><span data-l="en">← swipe for more →</span></p>
+    </div>
+  </section>
+
+  <!-- ── privacy band ──────────────────────────────────────────────── -->
+  <section id="privacy">
+    <div class="wrap">
+      <div class="band reveal">
+        <div>
+          <p class="eyebrow"><span data-l="zh">隱私</span><span data-l="en">Privacy</span></p>
+          <h2><span data-l="zh">帳本留在你的手機裡</span><span data-l="en">Your ledger stays on your phone</span></h2>
+          <p class="lede">
+            <span data-l="zh">沒有帳號，也沒有雲端同步。資料是裝置上的本機資料庫，可以用 Face ID 或指紋上鎖，第一次打開就能離線使用。</span>
+            <span data-l="en">No account and no cloud sync. The ledger is a local database on your device, lockable with Face ID or a fingerprint, and usable offline from the first launch.</span>
+          </p>
+          <p class="note">
+            <span data-l="zh">股價、匯率與電子發票查詢需要連線，這幾件事才會對外要資料。</span>
+            <span data-l="en">Stock prices, exchange rates and e-invoice lookups are the only things that reach the network.</span>
+          </p>
+        </div>
+        <div class="pills">
+          <span data-l="zh">不用註冊</span><span data-l="en">No sign-up</span>
+          <span data-l="zh">沒有雲端同步</span><span data-l="en">No cloud sync</span>
+          <span data-l="zh">生物辨識上鎖</span><span data-l="en">Biometric lock</span>
+          <span data-l="zh">無廣告</span><span data-l="en">No ads</span>
+          <span data-l="zh">無第三方追蹤</span><span data-l="en">No third-party trackers</span>
+          <span data-l="zh">離線可用</span><span data-l="en">Offline-first</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── pricing + demo mode ───────────────────────────────────────── -->
+  <section id="pricing">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span data-l="zh">價格</span><span data-l="en">Pricing</span></p>
+      <h2 class="reveal"><span data-l="zh">先看看再決定</span><span data-l="en">Try it before anything else</span></h2>
+
+      <div class="two">
+        <div class="panel reveal">
+          <p class="price"><span data-l="zh">免費</span><span data-l="en">Free</span></p>
+          <h3 style="margin-top:8px"><span data-l="zh">功能全部給你</span><span data-l="en">Every feature, no paywall</span></h3>
+          <p>
+            <span data-l="zh">台灣的訂閱解鎖電子發票自動匯入，含一個月免費試用。台灣以外，所有功能本來就免費，訂閱純粹是贊助開發。</span>
+            <span data-l="en">In Taiwan a subscription unlocks automatic e-invoice import, with a one-month free trial. Everywhere else every feature is already free and the subscription is purely a way to support development.</span>
+          </p>
+        </div>
+        <div class="panel reveal">
+          <p class="price"><span data-l="zh">展示模式</span><span data-l="en">Demo Mode</span></p>
+          <h3 style="margin-top:8px"><span data-l="zh">不用填任何資料</span><span data-l="en">Nothing personal required</span></h3>
+          <p>
+            <span data-l="zh">第一個畫面就有展示模式，一鍵載入完整的示範資料，整個 App 先逛一圈再說。</span>
+            <span data-l="en">Demo Mode sits on the very first screen. One tap loads the whole app with realistic data, so you can look around first.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── faq ───────────────────────────────────────────────────────── -->
+  <section id="faq">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span data-l="zh">常見問題</span><span data-l="en">FAQ</span></p>
+      <h2 class="reveal"><span data-l="zh">幾個先問清楚的</span><span data-l="en">A few things worth knowing</span></h2>
+
+      <div class="faq">
+        <details class="reveal">
+          <summary><span data-l="zh">要註冊帳號嗎？</span><span data-l="en">Do I need an account?</span></summary>
+          <p><span data-l="zh">不用。下載打開就能開始記，沒有註冊、沒有登入。</span><span data-l="en">No. Open the app and start — there is no sign-up and no login.</span></p>
+        </details>
+        <details class="reveal">
+          <summary><span data-l="zh">換手機的話，資料怎麼辦？</span><span data-l="en">What happens when I change phones?</span></summary>
+          <p><span data-l="zh">因為沒有雲端同步，資料是跟著這台裝置的。搬家請用設定裡的匯出／匯入。</span><span data-l="en">Because there is no cloud sync, the ledger lives on that device. Use the export and import in Settings to move it.</span></p>
+        </details>
+        <details class="reveal">
+          <summary><span data-l="zh">支援哪些裝置？</span><span data-l="en">Which devices are supported?</span></summary>
+          <p><span data-l="zh">iPhone 與 Android 手機。介面有繁體中文、英文等 10 種語言。</span><span data-l="en">iPhone and Android phones. The interface ships in 10 languages, including English and Traditional Chinese.</span></p>
+        </details>
+        <details class="reveal">
+          <summary><span data-l="zh">電子發票自動記帳，台灣以外也有嗎？</span><span data-l="en">Is e-invoice import available outside Taiwan?</span></summary>
+          <p><span data-l="zh">沒有，那是接台灣財政部的電子發票系統。其他地區用手動、語音記帳與定期帳單。</span><span data-l="en">No — it is built on Taiwan's government e-invoice system. Elsewhere you have quick manual entry, voice entry and recurring bills.</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── closing cta ───────────────────────────────────────────────── -->
+  <section class="close">
+    <div class="wrap">
+      <img class="icon-lg reveal" src="assets/icon.png" alt="Quin">
+      <h2 class="reveal"><span data-l="zh">今天這筆，先記下來</span><span data-l="en">Start with today's first entry</span></h2>
+      <p class="lede reveal"><span data-l="zh">免費下載，不用註冊。看看一個不用每天硬撐的帳本長什麼樣子。</span><span data-l="en">Free to download, no sign-up. See what a ledger you don't have to keep up with feels like.</span></p>
+      <div class="stores reveal">
+        <a href="https://apps.apple.com/tw/app/id6758532357" aria-label="Download on the App Store">
+          <img class="on-light" data-l="zh" src="assets/badges/app-store-zh.svg" alt="下載 App Store 版">
+          <img class="on-dark" data-l="zh" src="assets/badges/app-store-zh-white.svg" alt="下載 App Store 版">
+          <img class="on-light" data-l="en" src="assets/badges/app-store-en.svg" alt="Download on the App Store">
+          <img class="on-dark" data-l="en" src="assets/badges/app-store-en-white.svg" alt="Download on the App Store">
+        </a>
+        <a class="play" href="https://play.google.com/store/apps/details?id=com.twentyoneisawesome.quin" aria-label="Get it on Google Play">
+          <img data-l="zh" src="assets/badges/google-play-zh.png" alt="上 Google Play 下載">
+          <img data-l="en" src="assets/badges/google-play-en.png" alt="Get it on Google Play">
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Quin</span>
+    <a href="https://twentyoneisawesome.github.io/quin-support/"><span data-l="zh">支援</span><span data-l="en">Support</span></a>
+    <a href="https://twentyoneisawesome.github.io/quin-support/zh-tw/privacy/" data-l="zh">隱私權政策</a>
+    <a href="https://twentyoneisawesome.github.io/quin-support/en/privacy/" data-l="en">Privacy</a>
+    <a href="https://twentyoneisawesome.github.io/quin-support/zh-tw/terms/" data-l="zh">服務條款</a>
+    <a href="https://twentyoneisawesome.github.io/quin-support/en/terms/" data-l="en">Terms</a>
+    <a href="press/"><span data-l="zh">媒體素材</span><span data-l="en">Press kit</span></a>
+    <a href="mailto:twentyoneisawesome@gmail.com"><span data-l="zh">聯絡開發者</span><span data-l="en">Contact</span></a>
+    <span class="meta">Made in Taiwan</span>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
 </body>
 </html>
