@@ -1,10 +1,10 @@
-# Quin — Press Kit
+# Landy Money — Press Kit
 
-Media assets and factual information for **Quin記帳 (Quin)**, an offline-first
+Media assets and factual information for **Landy Money(繁中:懶得記)**, an offline-first
 personal finance app for Taiwan.
 
 🌐 **Product site:** https://twentyoneisawesome.github.io/quin-press-kit/ — the
-marketing page for Quin, bilingual (繁體中文 / English), light and dark.
+marketing page for Landy Money, bilingual (繁體中文 / English), light and dark.
 📄 **Press kit:** https://twentyoneisawesome.github.io/quin-press-kit/press/
 📱 **App Store:** https://apps.apple.com/tw/app/id6758532357
 🤖 **Google Play:** https://play.google.com/store/apps/details?id=com.twentyoneisawesome.quin
@@ -15,7 +15,7 @@ marketing page for Quin, bilingual (繁體中文 / English), light and dark.
 
 | | |
 | --- | --- |
-| **App name** | Quin記帳 (Quin) |
+| **App name** | Landy Money(繁中:懶得記) |
 | **Developer** | HSIN WEI LEE — independent developer |
 | **Category** | Finance |
 | **Released** | 4 August 2026 |
@@ -29,17 +29,17 @@ marketing page for Quin, bilingual (繁體中文 / English), light and dark.
 
 ## One-line description
 
-Link your Taiwanese e-invoice carrier once and Quin writes your ledger for you —
+Link your Taiwanese e-invoice carrier once and Landy Money writes your ledger for you —
 budgets, goals and TWSE-priced holdings included, with no account and no cloud.
 
 ## What it is
 
-Quin turns Taiwan's national e-invoice (電子發票) system into an expense tracker
+Landy Money turns Taiwan's national e-invoice (電子發票) system into an expense tracker
 that keeps itself. Connect your carrier once and every purchase arrives already
 categorized and matched against your budgets — no receipts, no manual entry.
 
 Anything the carrier does not cover can be spoken instead — say "lunch, 120, cash"
-and Quin fills in the amount, category and account, with speech-to-text running on
+and Landy Money fills in the amount, category and account, with speech-to-text running on
 the device.
 
 Around that sits a full finance app: a one-glance dashboard, envelope budgets with
@@ -100,6 +100,6 @@ screenshots.
 
 ## Usage
 
-These assets are provided for editorial and press coverage of Quin. The Quin name,
+These assets are provided for editorial and press coverage of Landy Money. The Landy Money name,
 icon and logo remain the property of the developer; please don't modify them or use
 them to imply endorsement.

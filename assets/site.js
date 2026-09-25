@@ -1,4 +1,4 @@
-/* Quin — product site behaviour: language, theme, reveals, voice demo. */
+/* Landy Money — product site behaviour: language, theme, reveals, voice demo. */
 (function () {
   'use strict';
 
