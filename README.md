@@ -30,7 +30,7 @@ marketing page for Landy Money, bilingual (繁體中文 / English), light and da
 ## One-line description
 
 Link your Taiwanese e-invoice carrier once and Landy Money writes your ledger for you —
-budgets, goals and TWSE-priced holdings included, with no account and no cloud sync.
+budgets, goals and TWSE-priced holdings included, with no account needed and cloud backup to iCloud and Google Drive.
 
 ## What it is
 
