@@ -47,7 +47,7 @@ overspend alerts, savings goals funded from real account balances, holdings pric
 from TWSE and US markets, recurring-bill reminders, multi-currency accounts with
 daily exchange rates, and home screen widgets on both platforms.
 
-There is no sign-up and no cloud account. The ledger is a local, biometrically
+There is no sign-up and no account to create. The ledger is a local, biometrically
 locked database on the device, fully usable offline from first launch, with cloud backup
 to iCloud and Google Drive.
 
