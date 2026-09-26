@@ -30,7 +30,7 @@ marketing page for Landy Money, bilingual (繁體中文 / English), light and da
 ## One-line description
 
 Link your Taiwanese e-invoice carrier once and Landy Money writes your ledger for you —
-budgets, goals and TWSE-priced holdings included, with no account and no cloud.
+budgets, goals and TWSE-priced holdings included, with no account and no cloud sync.
 
 ## What it is
 
@@ -48,7 +48,8 @@ from TWSE and US markets, recurring-bill reminders, multi-currency accounts with
 daily exchange rates, and home screen widgets on both platforms.
 
 There is no sign-up and no cloud account. The ledger is a local, biometrically
-locked database on the device, fully usable offline from first launch.
+locked database on the device, fully usable offline from first launch, with an optional
+manual backup to the user's own iCloud or Google Drive.
 
 ## For reviewers
 
