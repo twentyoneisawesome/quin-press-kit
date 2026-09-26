@@ -48,8 +48,8 @@ from TWSE and US markets, recurring-bill reminders, multi-currency accounts with
 daily exchange rates, and home screen widgets on both platforms.
 
 There is no sign-up and no cloud account. The ledger is a local, biometrically
-locked database on the device, fully usable offline from first launch, with an optional
-manual backup to the user's own iCloud or Google Drive.
+locked database on the device, fully usable offline from first launch, with cloud backup
+to iCloud and Google Drive.
 
 ## For reviewers
 
