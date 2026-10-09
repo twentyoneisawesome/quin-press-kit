@@ -22,7 +22,7 @@ marketing page for Landy Money, bilingual (繁體中文 / English), light and da
 | **Current version** | 1.0.9 (September 2026) |
 | **Platforms** | iPhone (iOS 16.4+), Android phones — tablets are not supported |
 | **Languages** | 10: English, Traditional Chinese, Cantonese, Japanese, Korean, Spanish, Brazilian Portuguese, Indonesian, Vietnamese, Thai |
-| **Price** | Free. In Taiwan, a subscription unlocks automatic e-invoice import (1-month free trial). Everywhere else every feature is free and the subscription is purely a way to support development. |
+| **Price** | Free, with every feature included — automatic e-invoice import in Taiwan too. The app shows a small banner ad, and a single one-time in-app purchase removes ads for good. There is no subscription. |
 | **App Store ID** | 6758532357 |
 | **Play package** | com.twentyoneisawesome.quin |
 | **Contact** | _add your press contact address here_ |
